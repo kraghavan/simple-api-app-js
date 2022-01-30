@@ -1,7 +1,6 @@
-// import fetch from 'node-fetch';
-
 const fetch = require('node-fetch');
 
+// constructs url full link with page number
 function constructURL(url, pageNumber) {
     if(pageNumber>=1) {
         return url+pageNumber.toString()+".json";
@@ -9,10 +8,11 @@ function constructURL(url, pageNumber) {
     return "";
 }
 
+// sort acc date
+// calculate running sum based on sorted date
+// print on console
 function calculateRunningSum(costMap) {
-    // sort acc date
-    // calculate running sum based on sorted date
-    // print on console
+
     let keys=[...costMap.keys()];
     let skeys = keys.sort();
 
@@ -25,6 +25,8 @@ function calculateRunningSum(costMap) {
 
 }
 
+// create HTTP request
+// send requests and return map
 async function gatherData(url) {
     let costMap = new Map([]);
     let objectCount = 0;
