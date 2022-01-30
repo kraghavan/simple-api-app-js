@@ -13,3 +13,5 @@ Run this command to see the app action
 ## Test code function
 Run this command to view unittest results (the unit tests send real requests to URL. Need to fix that)
 ```npm run test```
+
+Reviews and comments welcome
