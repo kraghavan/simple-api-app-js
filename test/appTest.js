@@ -2,8 +2,6 @@ const myFunctions = require('../app');
 const assert = require('chai').assert;
 const sinon = require("sinon");
 
-// myFunctions.sampleApp(false);
-
 describe('URL check', function() {
 
     it('ConstructUrl', function() {
@@ -38,6 +36,3 @@ describe('URL check', function() {
         assert.equal(zer0Map.size,0);
     });
 });
-
-
-
