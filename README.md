@@ -1,1 +1,3 @@
-# simple-api-app-js
+node_modules
+coverage
+build
