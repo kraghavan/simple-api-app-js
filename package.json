@@ -1,0 +1,20 @@
+{
+  "name": "simple-api-app",
+  "version": "1.0.0",
+  "description": "simple that connects to an api and displays information",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "build-app": "node app.js true",
+    "build": "npm run build-app"
+  },
+  "author": "Karthika Raghavan",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.2.0",
+    "chai": "^4.3.6",
+    "node-fetch": "^2.6.1",
+    "sinon": "^13.0.0",
+    "sinon-chai": "^3.7.0"
+  }
+}
